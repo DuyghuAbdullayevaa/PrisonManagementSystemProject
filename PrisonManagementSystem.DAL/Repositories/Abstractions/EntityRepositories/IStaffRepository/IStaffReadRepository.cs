@@ -1,0 +1,13 @@
+﻿using PrisonManagementSystem.DAL.Entities.PrisonDBContext;
+using PrisonManagementSystem.DAL.Repositories.Abstractions.Base.IRepository;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace PrisonManagementSystem.DAL.Repositories.Abstractions.EntityRepositories.IStaffRepository
+{
+    public interface IStaffReadRepository : IRepositoryRead<Staff>
+    {
+     
+    }
+}

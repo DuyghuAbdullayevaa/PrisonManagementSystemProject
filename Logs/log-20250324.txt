@@ -1,0 +1,845 @@
+[2025-03-24 00:27:49.001 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 00:27:49.142 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 00:27:49.783 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-24 00:27:51.729 +04:00] [INF] HTTP GET /api/Prison/GetAll responded 200 in 8422.7734 ms 
+[2025-03-24 00:42:32.419 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 00:42:32.455 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 00:42:32.615 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-24 00:42:33.222 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Prison -> GetPrisonDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison -> PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto
+
+Type Map configuration:
+Prison -> GetPrisonDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison -> PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto
+
+Destination Member:
+Cells
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at lambda_method76(Closure , Cell )
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at lambda_method75(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method75(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method75(Closure , Object , List`1 , ResolutionContext )
+   at PrisonService.GetAllPrisonsAsync(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\PrisonService.cs:line 76
+   at PrisonManagementSystem.API.Controllers.PrisonController.GetAllPrisons(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\PrisonController.cs:line 20
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-24 00:42:33.297 +04:00] [ERR] Error: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] | Path: /api/Prison/GetAll 
+[2025-03-24 00:42:33.307 +04:00] [ERR] HTTP GET /api/Prison/GetAll responded 500 in 2592.4669 ms 
+[2025-03-24 00:44:02.299 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Prison -> GetPrisonDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison -> PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto
+
+Type Map configuration:
+Prison -> GetPrisonDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison -> PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto
+
+Destination Member:
+Cells
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at lambda_method76(Closure , Cell )
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at lambda_method75(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method75(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method75(Closure , Object , List`1 , ResolutionContext )
+   at PrisonService.GetAllPrisonsAsync(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\PrisonService.cs:line 76
+   at PrisonManagementSystem.API.Controllers.PrisonController.GetAllPrisons(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\PrisonController.cs:line 20
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-24 00:44:02.306 +04:00] [ERR] Error: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] | Path: /api/Prison/GetAll 
+[2025-03-24 00:44:02.307 +04:00] [ERR] HTTP GET /api/Prison/GetAll responded 500 in 132.4357 ms 
+[2025-03-24 00:44:03.383 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Prison -> GetPrisonDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison -> PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto
+
+Type Map configuration:
+Prison -> GetPrisonDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison -> PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto
+
+Destination Member:
+Cells
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at lambda_method76(Closure , Cell )
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at lambda_method75(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method75(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method75(Closure , Object , List`1 , ResolutionContext )
+   at PrisonService.GetAllPrisonsAsync(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\PrisonService.cs:line 76
+   at PrisonManagementSystem.API.Controllers.PrisonController.GetAllPrisons(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\PrisonController.cs:line 20
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-24 00:44:03.389 +04:00] [ERR] Error: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] | Path: /api/Prison/GetAll 
+[2025-03-24 00:44:03.390 +04:00] [ERR] HTTP GET /api/Prison/GetAll responded 500 in 64.6681 ms 
+[2025-03-24 00:46:03.662 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 00:46:03.711 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 00:46:03.882 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-24 00:46:04.496 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Prison -> GetPrisonDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison -> PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto
+
+Type Map configuration:
+Prison -> GetPrisonDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison -> PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto
+
+Destination Member:
+Cells
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at lambda_method76(Closure , Cell )
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at lambda_method75(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method75(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method75(Closure , Object , List`1 , ResolutionContext )
+   at PrisonService.GetAllPrisonsAsync(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\PrisonService.cs:line 76
+   at PrisonManagementSystem.API.Controllers.PrisonController.GetAllPrisons(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\PrisonController.cs:line 20
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-24 00:46:04.545 +04:00] [ERR] Error: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] | Path: /api/Prison/GetAll 
+[2025-03-24 00:46:04.551 +04:00] [ERR] HTTP GET /api/Prison/GetAll responded 500 in 2427.1202 ms 
+[2025-03-24 00:50:24.649 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 00:50:24.694 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 00:50:24.847 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-24 00:50:25.409 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Prison -> GetPrisonDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison -> PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto
+
+Type Map configuration:
+Prison -> GetPrisonDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison -> PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto
+
+Destination Member:
+Cells
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+String -> GetCellDto
+System.String -> PrisonManagementSystem.BL.DTOs.Cell.GetCellDto
+   at lambda_method79(Closure , String , GetCellDto , ResolutionContext )
+   at lambda_method75(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method75(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method75(Closure , Object , List`1 , ResolutionContext )
+   at PrisonService.GetAllPrisonsAsync(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\PrisonService.cs:line 76
+   at PrisonManagementSystem.API.Controllers.PrisonController.GetAllPrisons(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\PrisonController.cs:line 20
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-24 00:50:25.463 +04:00] [ERR] Error: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prison, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Prison.GetPrisonDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] | Path: /api/Prison/GetAll 
+[2025-03-24 00:50:25.471 +04:00] [ERR] HTTP GET /api/Prison/GetAll responded 500 in 2198.1709 ms 
+[2025-03-24 00:51:29.994 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 00:51:30.036 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 00:51:30.203 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-24 00:51:30.862 +04:00] [INF] HTTP GET /api/Prison/GetAll responded 200 in 2455.6489 ms 
+[2025-03-24 11:39:00.263 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 3918.2738 ms 
+[2025-03-24 11:39:41.766 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 11:39:41.770 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 11:39:41.852 +04:00] [INF] HTTP GET /api/Schedule/GetAll responded 200 in 248.7679 ms 
+[2025-03-24 11:41:42.852 +04:00] [INF] HTTP DELETE /api/Staff/Fire/17a45380-dcb6-4b0a-94a6-08dd67a3214a responded 200 in 41713.0941 ms 
+[2025-03-24 11:42:26.484 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 73.6814 ms 
+[2025-03-24 11:42:35.220 +04:00] [INF] HTTP GET /api/Schedule/GetAll responded 200 in 53.1294 ms 
+[2025-03-24 11:43:35.231 +04:00] [INF] HTTP DELETE /api/Staff/Fire/cf465864-6906-47e7-94a7-08dd67a3214a responded 200 in 8081.0885 ms 
+[2025-03-24 11:44:06.639 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 63.6632 ms 
+[2025-03-24 11:44:58.611 +04:00] [INF] HTTP GET /api/Schedule/GetAll responded 200 in 31.6776 ms 
+[2025-03-24 11:44:59.895 +04:00] [INF] HTTP GET /api/Schedule/GetAll responded 200 in 47.3772 ms 
+[2025-03-24 11:45:00.899 +04:00] [INF] HTTP GET /api/Schedule/GetAll responded 200 in 18.6846 ms 
+[2025-03-24 11:48:07.030 +04:00] [INF] HTTP PUT /api/Schedule/Update/466e5190-b47c-4916-7637-08dd67a32163 responded 200 in 250.8126 ms 
+[2025-03-24 11:48:14.999 +04:00] [INF] HTTP GET /api/Schedule/GetAll responded 200 in 23.1223 ms 
+[2025-03-24 11:53:37.921 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 11:53:38.056 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 11:53:40.365 +04:00] [INF] HTTP GET /api/Schedule/GetAll responded 200 in 8639.3701 ms 
+[2025-03-24 11:53:48.800 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 8011.5246 ms 
+[2025-03-24 11:54:28.507 +04:00] [INF] HTTP PUT /api/Schedule/Update/466e5190-b47c-4916-7637-08dd67a32163 responded 400 in 91.0133 ms 
+[2025-03-24 11:54:40.152 +04:00] [INF] HTTP PUT /api/Schedule/Update/466e5190-b47c-4916-7637-08dd67a32163 responded 400 in 24.6543 ms 
+[2025-03-24 11:55:26.413 +04:00] [INF] HTTP PUT /api/Schedule/Update/466e5190-b47c-4916-7637-08dd67a32163 responded 200 in 948.1161 ms 
+[2025-03-24 11:55:32.056 +04:00] [INF] HTTP GET /api/Schedule/GetAll responded 200 in 36.9170 ms 
+[2025-03-24 11:55:38.629 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 1699.0205 ms 
+[2025-03-24 14:03:24.746 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 14:03:24.881 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 14:03:27.148 +04:00] [INF] HTTP GET /api/Schedule/GetAll responded 200 in 8593.5100 ms 
+[2025-03-24 14:04:04.660 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 9812.8760 ms 
+[2025-03-24 14:04:30.779 +04:00] [INF] HTTP PUT /api/Schedule/Update/466e5190-b47c-4916-7637-08dd67a32163 responded 200 in 965.2789 ms 
+[2025-03-24 14:10:22.287 +04:00] [INF] HTTP GET /api/Schedule/GetAll responded 200 in 97.0234 ms 
+[2025-03-24 14:10:50.291 +04:00] [INF] HTTP DELETE /api/Schedule/Delete/466e5190-b47c-4916-7637-08dd67a32163 responded 400 in 20404.3546 ms 
+[2025-03-24 14:11:12.063 +04:00] [INF] HTTP PUT /api/Schedule/Update/466e5190-b47c-4916-7637-08dd67a32163 responded 200 in 67.3833 ms 
+[2025-03-24 14:15:19.277 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 14:15:19.418 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 14:15:21.419 +04:00] [INF] HTTP GET /api/Schedule/GetAll responded 404 in 8328.9362 ms 
+[2025-03-24 14:15:50.477 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 601.8716 ms 
+[2025-03-24 14:16:39.711 +04:00] [INF] HTTP PUT /api/Schedule/Update/466e5190-b47c-4916-7637-08dd67a32163 responded 404 in 6377.4913 ms 
+[2025-03-24 14:42:19.864 +04:00] [WRN] Entity 'Incident' has a global query filter defined and is the required end of a relationship with the entity 'Report'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:42:19.900 +04:00] [WRN] Entity 'Crime' has a global query filter defined and is the required end of a relationship with the entity 'PrisonerCrime'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:42:19.900 +04:00] [WRN] Entity 'Prisoner' has a global query filter defined and is the required end of a relationship with the entity 'Punishment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:42:19.900 +04:00] [WRN] Entity 'Prisoner' has a global query filter defined and is the required end of a relationship with the entity 'Visit'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:42:20.169 +04:00] [WRN] Entity 'Incident' has a global query filter defined and is the required end of a relationship with the entity 'Report'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:42:20.169 +04:00] [WRN] Entity 'Crime' has a global query filter defined and is the required end of a relationship with the entity 'PrisonerCrime'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:42:20.169 +04:00] [WRN] Entity 'Prisoner' has a global query filter defined and is the required end of a relationship with the entity 'Punishment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:42:20.169 +04:00] [WRN] Entity 'Prisoner' has a global query filter defined and is the required end of a relationship with the entity 'Visit'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:42:44.231 +04:00] [WRN] Entity 'Incident' has a global query filter defined and is the required end of a relationship with the entity 'Report'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:42:44.264 +04:00] [WRN] Entity 'Crime' has a global query filter defined and is the required end of a relationship with the entity 'PrisonerCrime'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:42:44.264 +04:00] [WRN] Entity 'Prisoner' has a global query filter defined and is the required end of a relationship with the entity 'Punishment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:42:44.264 +04:00] [WRN] Entity 'Prisoner' has a global query filter defined and is the required end of a relationship with the entity 'Visit'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:42:44.520 +04:00] [WRN] Entity 'Incident' has a global query filter defined and is the required end of a relationship with the entity 'Report'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:42:44.520 +04:00] [WRN] Entity 'Crime' has a global query filter defined and is the required end of a relationship with the entity 'PrisonerCrime'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:42:44.520 +04:00] [WRN] Entity 'Prisoner' has a global query filter defined and is the required end of a relationship with the entity 'Punishment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:42:44.520 +04:00] [WRN] Entity 'Prisoner' has a global query filter defined and is the required end of a relationship with the entity 'Visit'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:43:00.182 +04:00] [WRN] Entity 'Incident' has a global query filter defined and is the required end of a relationship with the entity 'Report'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:43:00.212 +04:00] [WRN] Entity 'Crime' has a global query filter defined and is the required end of a relationship with the entity 'PrisonerCrime'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:43:00.213 +04:00] [WRN] Entity 'Prisoner' has a global query filter defined and is the required end of a relationship with the entity 'Punishment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:43:00.213 +04:00] [WRN] Entity 'Prisoner' has a global query filter defined and is the required end of a relationship with the entity 'Visit'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:43:42.867 +04:00] [WRN] Entity 'Incident' has a global query filter defined and is the required end of a relationship with the entity 'Report'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:43:43.029 +04:00] [WRN] Entity 'Crime' has a global query filter defined and is the required end of a relationship with the entity 'PrisonerCrime'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:43:43.034 +04:00] [WRN] Entity 'Prisoner' has a global query filter defined and is the required end of a relationship with the entity 'Punishment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:43:43.036 +04:00] [WRN] Entity 'Prisoner' has a global query filter defined and is the required end of a relationship with the entity 'Visit'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+[2025-03-24 14:43:47.771 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 9285.4738 ms 
+[2025-03-24 14:44:22.463 +04:00] [INF] HTTP GET /api/Schedule/GetById/466e5190-b47c-4916-7637-08dd67a32163 responded 200 in 270.7558 ms 
+[2025-03-24 14:50:04.663 +04:00] [ERR] Failed executing DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [PrisonerCrimes] ADD CONSTRAINT [PK_PrisonerCrimes] PRIMARY KEY ([Id]); 
+[2025-03-24 14:52:22.393 +04:00] [ERR] Failed executing DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [PrisonerCrimes] ADD CONSTRAINT [PK_PrisonerCrimes] PRIMARY KEY ([Id]); 
+[2025-03-24 14:53:52.449 +04:00] [ERR] Failed executing DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [PrisonerCrimes] ADD CONSTRAINT [PK_PrisonerCrimes] PRIMARY KEY ([Id]); 
+[2025-03-24 14:57:54.923 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 14:57:55.053 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 14:57:57.171 +04:00] [INF] HTTP GET /api/Schedule/GetAll responded 404 in 8702.1846 ms 
+[2025-03-24 14:58:07.411 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 551.1873 ms 
+[2025-03-24 15:01:24.086 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 15:01:24.212 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 15:01:24.869 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-24 15:01:27.007 +04:00] [INF] HTTP GET /api/Prison/GetAll responded 200 in 9496.0154 ms 
+[2025-03-24 15:02:06.800 +04:00] [INF] HTTP GET /api/User/all responded 200 in 502.9895 ms 
+[2025-03-24 15:02:53.338 +04:00] [INF] HTTP POST /api/Staff/Create responded 400 in 344.2403 ms 
+[2025-03-24 15:03:13.888 +04:00] [INF] HTTP POST /api/Staff/Create responded 201 in 1161.1231 ms 
+[2025-03-24 15:03:21.121 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 110.5442 ms 
+[2025-03-24 15:03:53.056 +04:00] [INF] HTTP POST /api/Staff/Create responded 400 in 82.7041 ms 
+[2025-03-24 15:04:05.674 +04:00] [INF] HTTP POST /api/Staff/Create responded 201 in 70.1338 ms 
+[2025-03-24 15:04:10.905 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 59.0677 ms 
+[2025-03-24 15:32:51.631 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 15:32:51.765 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 15:32:54.420 +04:00] [INF] HTTP GET /api/Schedule/GetAll responded 200 in 9356.3143 ms 
+[2025-03-24 15:33:24.616 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 15:33:24.619 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 15:33:24.876 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-24 15:33:25.121 +04:00] [INF] HTTP GET /api/Prison/GetAll responded 200 in 653.8620 ms 
+[2025-03-24 15:33:53.450 +04:00] [INF] HTTP GET /api/User/all responded 200 in 366.2169 ms 
+[2025-03-24 15:34:40.760 +04:00] [INF] HTTP POST /api/Staff/Create responded 201 in 1394.0481 ms 
+[2025-03-24 15:34:51.186 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 103.9423 ms 
+[2025-03-24 15:35:20.542 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-24 15:35:20.671 +04:00] [INF] HTTP GET /api/Staff/GetById/f562001c-066e-4060-987a-08dd6ac7dd3a responded 200 in 227.3956 ms 
+[2025-03-24 15:36:12.555 +04:00] [INF] HTTP GET /api/Schedule/GetById/656e5407-559c-4527-93b4-2a5f7141a05a responded 200 in 60.2047 ms 
+[2025-03-24 15:38:15.318 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 9156.2143 ms 
+[2025-03-24 15:38:42.571 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-24 15:38:42.679 +04:00] [INF] HTTP GET /api/Staff/GetById/f562001c-066e-4060-987a-08dd6ac7dd3a responded 200 in 364.1534 ms 
+[2025-03-24 16:00:27.152 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 6025.8037 ms 
+[2025-03-24 16:01:26.484 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 16:01:26.487 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 16:01:26.508 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-24 16:01:26.623 +04:00] [INF] HTTP GET /api/Prison/GetAll responded 200 in 191.1925 ms 
+[2025-03-24 16:02:15.089 +04:00] [INF] HTTP POST /api/Staff/Create responded 400 in 88.3618 ms 
+[2025-03-24 16:02:25.113 +04:00] [INF] HTTP POST /api/Staff/Create responded 400 in 14.1047 ms 
+[2025-03-24 16:02:30.223 +04:00] [INF] HTTP POST /api/Staff/Create responded 400 in 3.4271 ms 
+[2025-03-24 16:02:44.941 +04:00] [INF] HTTP POST /api/Staff/Create responded 400 in 2.4201 ms 
+[2025-03-24 16:03:44.461 +04:00] [INF] HTTP POST /api/Staff/Create responded 201 in 46300.0970 ms 
+[2025-03-24 16:04:12.537 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 20800.1488 ms 
+[2025-03-24 16:08:00.202 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 5911.6660 ms 
+[2025-03-24 16:21:20.523 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 16:21:20.619 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 16:21:22.203 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 404 in 5799.2960 ms 
+[2025-03-24 16:21:47.567 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 16:21:47.569 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 16:21:47.790 +04:00] [INF] HTTP GET /api/Schedule/GetAll responded 200 in 310.5667 ms 
+[2025-03-24 16:22:01.639 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 113.4751 ms 
+[2025-03-24 16:22:37.375 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-24 16:22:37.515 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 267.4394 ms 
+[2025-03-24 16:23:00.855 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 400 in 260.4179 ms 
+[2025-03-24 16:23:12.282 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 400 in 162.4563 ms 
+[2025-03-24 16:23:30.972 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 400 in 58.9350 ms 
+[2025-03-24 16:23:42.439 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 400 in 20.6882 ms 
+[2025-03-24 16:23:50.250 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 404 in 38.7385 ms 
+[2025-03-24 16:24:08.261 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 16:24:08.262 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 16:24:08.292 +04:00] [INF] HTTP GET /api/Visit/GetAll responded 404 in 2539.4936 ms 
+[2025-03-24 16:24:43.455 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 400 in 17.9735 ms 
+[2025-03-24 16:24:56.895 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 400 in 8.4744 ms 
+[2025-03-24 16:25:09.858 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 400 in 8.2887 ms 
+[2025-03-24 16:25:19.318 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 400 in 13.4305 ms 
+[2025-03-24 16:27:15.128 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 201 in 92815.8718 ms 
+[2025-03-24 16:27:21.755 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 16:27:21.757 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 16:27:21.839 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 226.6355 ms 
+[2025-03-24 16:42:33.192 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 201 in 6924.6032 ms 
+[2025-03-24 16:42:50.166 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 16:42:50.170 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 16:42:50.340 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 251.2819 ms 
+[2025-03-24 16:56:43.281 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 400 in 3473.9256 ms 
+[2025-03-24 16:57:03.107 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 400 in 348.3339 ms 
+[2025-03-24 16:57:13.637 +04:00] [ERR] Visitor və görüşlər əlavə edilərkən xəta baş verdi. 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateVisitorDto -> Visitor
+PrisonManagementSystem.BL.DTOs.Visitor.CreateVisitorDto -> PrisonManagementSystem.DAL.Entities.PrisonDBContext.Visitor
+   at lambda_method45(Closure , Object , Visitor , ResolutionContext )
+   at PrisonManagementSystem.BL.Services.Implementations.VisitorService.CreateVisitorAsync(CreateVisitorDto dto) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\VisitorService.cs:line 127
+[2025-03-24 16:57:13.821 +04:00] [ERR] HTTP POST /api/Visitor/CreateWithVisit responded 500 in 2231.0058 ms 
+[2025-03-24 16:58:44.248 +04:00] [ERR] Visitor və görüşlər əlavə edilərkən xəta baş verdi. 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateVisitorDto -> Visitor
+PrisonManagementSystem.BL.DTOs.Visitor.CreateVisitorDto -> PrisonManagementSystem.DAL.Entities.PrisonDBContext.Visitor
+   at lambda_method45(Closure , Object , Visitor , ResolutionContext )
+   at PrisonManagementSystem.BL.Services.Implementations.VisitorService.CreateVisitorAsync(CreateVisitorDto dto) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\VisitorService.cs:line 127
+[2025-03-24 16:58:44.250 +04:00] [ERR] HTTP POST /api/Visitor/CreateWithVisit responded 500 in 59.3747 ms 
+[2025-03-24 17:00:25.515 +04:00] [ERR] Visitor və görüşlər əlavə edilərkən xəta baş verdi. 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateVisitorDto -> Visitor
+PrisonManagementSystem.BL.DTOs.Visitor.CreateVisitorDto -> PrisonManagementSystem.DAL.Entities.PrisonDBContext.Visitor
+   at lambda_method45(Closure , Object , Visitor , ResolutionContext )
+   at PrisonManagementSystem.BL.Services.Implementations.VisitorService.CreateVisitorAsync(CreateVisitorDto dto)
+[2025-03-24 17:00:25.559 +04:00] [ERR] HTTP POST /api/Visitor/CreateWithVisit responded 500 in 83941.6685 ms 
+[2025-03-24 17:01:18.105 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 400 in 16.4322 ms 
+[2025-03-24 17:10:36.952 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 400 in 16614.7883 ms 
+[2025-03-24 17:17:59.835 +04:00] [ERR] Failed executing DbCommand (18ms) [Parameters=[@p9='?' (DbType = Guid), @p10='?' (DbType = DateTime2), @p11='?' (DbType = DateTime2), @p12='?' (DbType = Int32), @p13='?' (DbType = Boolean), @p14='?' (DbType = Guid), @p15='?' (DbType = DateTime2), @p16='?' (DbType = DateTime2), @p17='?' (DbType = Int32), @p18='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Visits] ([Id], [CreateDate], [DeleteDate], [DurationInMinutes], [IsDeleted], [PrisonerId], [UpdateDate], [VisitDate], [VisitType], [VisitorId])
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18); 
+[2025-03-24 17:17:59.959 +04:00] [ERR] An exception occurred in the database while saving changes for context type 'PrisonManagementSystem.DAL.Data.PrisonDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Visits_Prisoners_PrisonerId". The conflict occurred in database "PrisonFinalProjectDb", table "dbo.Prisoners", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__203_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:2deb66c4-29ef-493e-be8d-cb508564f6bf
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) 
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Visits_Prisoners_PrisonerId". The conflict occurred in database "PrisonFinalProjectDb", table "dbo.Prisoners", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__203_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:2deb66c4-29ef-493e-be8d-cb508564f6bf
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2025-03-24 17:18:00.064 +04:00] [ERR] Visitor və görüşlər əlavə edilərkən xəta baş verdi. 
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Visits_Prisoners_PrisonerId". The conflict occurred in database "PrisonFinalProjectDb", table "dbo.Prisoners", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__203_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:2deb66c4-29ef-493e-be8d-cb508564f6bf
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PrisonManagementSystem.DAL.Repositories.Implementations.Base.UnitOfWork.CommitAsync() in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.DAL\Repositories\Implementations\Base\UnitOfWork.cs:line 31
+   at PrisonManagementSystem.BL.Services.Implementations.VisitorService.CreateVisitorAsync(CreateVisitorDto dto) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\VisitorService.cs:line 131
+[2025-03-24 17:18:00.175 +04:00] [ERR] HTTP POST /api/Visitor/CreateWithVisit responded 500 in 21245.6816 ms 
+[2025-03-24 17:18:14.939 +04:00] [ERR] Failed executing DbCommand (24ms) [Parameters=[@p9='?' (DbType = Guid), @p10='?' (DbType = DateTime2), @p11='?' (DbType = DateTime2), @p12='?' (DbType = Int32), @p13='?' (DbType = Boolean), @p14='?' (DbType = Guid), @p15='?' (DbType = DateTime2), @p16='?' (DbType = DateTime2), @p17='?' (DbType = Int32), @p18='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Visits] ([Id], [CreateDate], [DeleteDate], [DurationInMinutes], [IsDeleted], [PrisonerId], [UpdateDate], [VisitDate], [VisitType], [VisitorId])
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18); 
+[2025-03-24 17:18:14.955 +04:00] [ERR] An exception occurred in the database while saving changes for context type 'PrisonManagementSystem.DAL.Data.PrisonDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Visits_Prisoners_PrisonerId". The conflict occurred in database "PrisonFinalProjectDb", table "dbo.Prisoners", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__203_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:2deb66c4-29ef-493e-be8d-cb508564f6bf
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) 
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Visits_Prisoners_PrisonerId". The conflict occurred in database "PrisonFinalProjectDb", table "dbo.Prisoners", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__203_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:2deb66c4-29ef-493e-be8d-cb508564f6bf
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2025-03-24 17:20:40.854 +04:00] [ERR] Visitor və görüşlər əlavə edilərkən xəta baş verdi. 
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Visits_Prisoners_PrisonerId". The conflict occurred in database "PrisonFinalProjectDb", table "dbo.Prisoners", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__203_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:2deb66c4-29ef-493e-be8d-cb508564f6bf
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PrisonManagementSystem.DAL.Repositories.Implementations.Base.UnitOfWork.CommitAsync() in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.DAL\Repositories\Implementations\Base\UnitOfWork.cs:line 31
+   at PrisonManagementSystem.BL.Services.Implementations.VisitorService.CreateVisitorAsync(CreateVisitorDto dto) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\VisitorService.cs:line 131
+[2025-03-24 17:20:40.992 +04:00] [ERR] HTTP POST /api/Visitor/CreateWithVisit responded 500 in 153594.1688 ms 
+[2025-03-24 17:20:43.519 +04:00] [ERR] Failed executing DbCommand (6ms) [Parameters=[@p9='?' (DbType = Guid), @p10='?' (DbType = DateTime2), @p11='?' (DbType = DateTime2), @p12='?' (DbType = Int32), @p13='?' (DbType = Boolean), @p14='?' (DbType = Guid), @p15='?' (DbType = DateTime2), @p16='?' (DbType = DateTime2), @p17='?' (DbType = Int32), @p18='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Visits] ([Id], [CreateDate], [DeleteDate], [DurationInMinutes], [IsDeleted], [PrisonerId], [UpdateDate], [VisitDate], [VisitType], [VisitorId])
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18); 
+[2025-03-24 17:20:43.524 +04:00] [ERR] An exception occurred in the database while saving changes for context type 'PrisonManagementSystem.DAL.Data.PrisonDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Visits_Prisoners_PrisonerId". The conflict occurred in database "PrisonFinalProjectDb", table "dbo.Prisoners", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__203_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:2deb66c4-29ef-493e-be8d-cb508564f6bf
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) 
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Visits_Prisoners_PrisonerId". The conflict occurred in database "PrisonFinalProjectDb", table "dbo.Prisoners", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__203_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:2deb66c4-29ef-493e-be8d-cb508564f6bf
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2025-03-24 17:20:43.576 +04:00] [ERR] Visitor və görüşlər əlavə edilərkən xəta baş verdi. 
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Visits_Prisoners_PrisonerId". The conflict occurred in database "PrisonFinalProjectDb", table "dbo.Prisoners", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__203_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:2deb66c4-29ef-493e-be8d-cb508564f6bf
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PrisonManagementSystem.DAL.Repositories.Implementations.Base.UnitOfWork.CommitAsync() in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.DAL\Repositories\Implementations\Base\UnitOfWork.cs:line 31
+   at PrisonManagementSystem.BL.Services.Implementations.VisitorService.CreateVisitorAsync(CreateVisitorDto dto) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\VisitorService.cs:line 131
+[2025-03-24 17:20:43.583 +04:00] [ERR] HTTP POST /api/Visitor/CreateWithVisit responded 500 in 2626.1163 ms 
+[2025-03-24 17:20:43.788 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-24 17:20:43.963 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 3005.9072 ms 
+[2025-03-24 17:20:43.963 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 3015.8108 ms 
+[2025-03-24 17:21:28.439 +04:00] [ERR] Failed executing DbCommand (2ms) [Parameters=[@p9='?' (DbType = Guid), @p10='?' (DbType = DateTime2), @p11='?' (DbType = DateTime2), @p12='?' (DbType = Int32), @p13='?' (DbType = Boolean), @p14='?' (DbType = Guid), @p15='?' (DbType = DateTime2), @p16='?' (DbType = DateTime2), @p17='?' (DbType = Int32), @p18='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Visits] ([Id], [CreateDate], [DeleteDate], [DurationInMinutes], [IsDeleted], [PrisonerId], [UpdateDate], [VisitDate], [VisitType], [VisitorId])
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18); 
+[2025-03-24 17:21:28.444 +04:00] [ERR] An exception occurred in the database while saving changes for context type 'PrisonManagementSystem.DAL.Data.PrisonDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Visits_Prisoners_PrisonerId". The conflict occurred in database "PrisonFinalProjectDb", table "dbo.Prisoners", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__203_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:38fa5c43-0e64-4485-9b13-8809ce789bc8
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) 
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Visits_Prisoners_PrisonerId". The conflict occurred in database "PrisonFinalProjectDb", table "dbo.Prisoners", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__203_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:38fa5c43-0e64-4485-9b13-8809ce789bc8
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2025-03-24 17:25:45.881 +04:00] [ERR] Visitor və görüşlər əlavə edilərkən xəta baş verdi. 
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Visits_Prisoners_PrisonerId". The conflict occurred in database "PrisonFinalProjectDb", table "dbo.Prisoners", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__203_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:38fa5c43-0e64-4485-9b13-8809ce789bc8
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PrisonManagementSystem.DAL.Repositories.Implementations.Base.UnitOfWork.CommitAsync() in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.DAL\Repositories\Implementations\Base\UnitOfWork.cs:line 31
+   at PrisonManagementSystem.BL.Services.Implementations.VisitorService.CreateVisitorAsync(CreateVisitorDto dto)
+[2025-03-24 17:25:45.972 +04:00] [ERR] HTTP POST /api/Visitor/CreateWithVisit responded 500 in 265919.2714 ms 
+[2025-03-24 17:27:03.435 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+System.IO.IOException: The client reset the request stream.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.ReadAsyncInternal(Memory`1 destination, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.ReadFromStreamAsync(Stream utf8Json, ReadBufferState bufferState, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.ReadAllAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-24 17:27:03.697 +04:00] [ERR] Error: The client reset the request stream. | Path: /api/Visitor/CreateWithVisit 
+[2025-03-24 17:27:03.719 +04:00] [ERR] HTTP POST /api/Visitor/CreateWithVisit responded 500 in 10183.7536 ms 
+[2025-03-24 17:27:47.321 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 201 in 34267.0103 ms 
+[2025-03-24 17:27:55.033 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 17:27:55.038 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 17:27:55.679 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 903.6204 ms 
+[2025-03-24 17:28:12.037 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 98.7106 ms 
+[2025-03-24 17:28:20.615 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 65.5925 ms 
+[2025-03-24 17:39:40.306 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 400 in 2017.7882 ms 
+[2025-03-24 17:40:41.773 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 201 in 1810.1584 ms 
+[2025-03-24 17:40:49.917 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 17:40:49.922 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-24 17:40:50.167 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 342.9168 ms 
+[2025-03-24 17:40:58.928 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 32.2541 ms 
+[2025-03-24 19:32:31.990 +04:00] [INF] HTTP GET /api/Visitor/GetById/ac0e3df6-2739-4d78-85e8-fdcece9e8141 responded 404 in 94.8020 ms 
+[2025-03-24 19:32:50.849 +04:00] [INF] HTTP GET /api/Visit/GetById/ac0e3df6-2739-4d78-85e8-fdcece9e8141 responded 200 in 43.3660 ms 
+[2025-03-24 19:34:00.492 +04:00] [INF] HTTP DELETE /api/Visitor/Delete/429032d7-b7b1-43ae-bd08-02b109dd8290 responded 200 in 2486.9590 ms 
+[2025-03-24 19:35:11.346 +04:00] [INF] HTTP GET /api/Visit/GetById/ac0e3df6-2739-4d78-85e8-fdcece9e8141 responded 200 in 43.3205 ms 
+[2025-03-24 19:35:34.268 +04:00] [INF] HTTP GET /api/Visit/GetById/12935d25-4a6f-4e77-c9ef-08dd6acf2d5d responded 404 in 70.5274 ms 
+[2025-03-24 19:35:36.015 +04:00] [INF] HTTP GET /api/Visit/GetById/12935d25-4a6f-4e77-c9ef-08dd6acf2d5d responded 404 in 22.4624 ms 
+[2025-03-24 19:35:36.969 +04:00] [INF] HTTP GET /api/Visit/GetById/12935d25-4a6f-4e77-c9ef-08dd6acf2d5d responded 404 in 39.6936 ms 
+[2025-03-24 19:36:15.301 +04:00] [INF] HTTP GET /api/Visit/GetById/55fa0888-dcd8-4157-b321-7051971de49f responded 404 in 49.2474 ms 
+[2025-03-24 19:36:16.469 +04:00] [INF] HTTP GET /api/Visit/GetById/55fa0888-dcd8-4157-b321-7051971de49f responded 404 in 14.2963 ms 

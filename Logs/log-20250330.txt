@@ -1,0 +1,177 @@
+[2025-03-30 01:05:20.513 +04:00] [INF] HTTP GET /api/prisons responded 401 in 373.9267 ms 
+[2025-03-30 01:05:37.067 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-30 01:05:37.073 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-30 01:05:39.543 +04:00] [INF] HTTP GET /api/v1/schedules/GetAll responded 200 in 8526.7364 ms 
+[2025-03-30 01:06:40.961 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 01:06:43.240 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+System.NotImplementedException: The method or operation is not implemented.
+   at PrisonManagementSystem.API.Controllers.Base.BaseController.CreateResponse[T](GenericResponseModel`1 response) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\Core\BaseController.cs:line 14
+   at PrisonManagementSystem.API.Controllers.PunishmentController.GetAllPunishments(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\PunishmentController.cs:line 21
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-30 01:06:43.413 +04:00] [ERR] Error: The method or operation is not implemented. | Path: /api/v1/punishmnets/GetAll 
+[2025-03-30 01:06:43.444 +04:00] [ERR] HTTP GET /api/v1/punishmnets/GetAll responded 500 in 11228.2173 ms 
+[2025-03-30 01:08:23.906 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 01:08:25.993 +04:00] [INF] HTTP GET /api/v1/staffs/GetAllActive responded 200 in 9278.9778 ms 
+[2025-03-30 01:09:54.560 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 01:09:56.706 +04:00] [INF] HTTP GET /api/v1/staffs/GetAllActive responded 200 in 9189.1103 ms 
+[2025-03-30 10:25:43.852 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 10:25:45.952 +04:00] [INF] HTTP GET /api/v1/incidents/GetAll responded 200 in 8909.0861 ms 
+[2025-03-30 10:27:33.086 +04:00] [INF] HTTP POST /api/v1/reports/Create responded 201 in 21260.4925 ms 
+[2025-03-30 10:27:47.015 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 10:27:47.228 +04:00] [ERR] An exception occurred while iterating over the results of a query for context type 'PrisonManagementSystem.DAL.Data.PrisonDbContext'.
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method277(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method277(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+[2025-03-30 10:27:47.374 +04:00] [ERR] HTTP GET /api/v1/reports/GetAll responded 500 in 484.8983 ms 
+[2025-03-30 10:40:02.995 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 10:40:04.908 +04:00] [ERR] An exception occurred while iterating over the results of a query for context type 'PrisonManagementSystem.DAL.Data.PrisonDbContext'.
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method72(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method72(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+[2025-03-30 10:40:05.244 +04:00] [ERR] HTTP GET /api/v1/reports/GetAll responded 500 in 9158.0911 ms 
+[2025-03-30 10:40:33.144 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 10:40:36.444 +04:00] [INF] HTTP GET /api/v1/reports/GetById/3F9BC16B-5143-48E1-3A27-08DD6F53F1C3 responded 200 in 8867.4369 ms 
+[2025-03-30 10:41:57.763 +04:00] [ERR] An exception occurred while iterating over the results of a query for context type 'PrisonManagementSystem.DAL.Data.PrisonDbContext'.
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method72(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method72(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+[2025-03-30 10:41:57.826 +04:00] [ERR] HTTP GET /api/v1/reports/GetAll responded 500 in 155.3736 ms 
+[2025-03-30 10:43:21.433 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 10:43:23.387 +04:00] [ERR] An exception occurred while iterating over the results of a query for context type 'PrisonManagementSystem.DAL.Data.PrisonDbContext'.
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method72(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method72(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+[2025-03-30 10:43:23.720 +04:00] [ERR] HTTP GET /api/v1/reports/GetAll responded 500 in 9170.8589 ms 
+[2025-03-30 10:44:30.897 +04:00] [ERR] An exception occurred while iterating over the results of a query for context type 'PrisonManagementSystem.DAL.Data.PrisonDbContext'.
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method72(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method72(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+[2025-03-30 10:46:27.696 +04:00] [ERR] HTTP GET /api/v1/reports/GetAll responded 500 in 120561.8561 ms 
+[2025-03-30 10:46:28.765 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 10:46:28.920 +04:00] [INF] HTTP GET /api/v1/reports/GetById/3F9BC16B-5143-48E1-3A27-08DD6F53F1C3 responded 200 in 1169.5417 ms 
+[2025-03-30 10:49:30.795 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 10:49:33.089 +04:00] [ERR] An exception occurred while iterating over the results of a query for context type 'PrisonManagementSystem.DAL.Data.PrisonDbContext'.
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method72(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method72(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+[2025-03-30 10:49:33.219 +04:00] [ERR] HTTP GET /api/v1/reports/GetAll responded 500 in 22330.0782 ms 
+[2025-03-30 10:52:13.249 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 10:52:13.329 +04:00] [ERR] An exception occurred while iterating over the results of a query for context type 'PrisonManagementSystem.DAL.Data.PrisonDbContext'.
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method102(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method102(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+[2025-03-30 10:52:13.399 +04:00] [ERR] HTTP GET /api/v1/reports/GetAll responded 500 in 4642.6853 ms 
+[2025-03-30 10:53:07.417 +04:00] [ERR] An exception occurred while iterating over the results of a query for context type 'PrisonManagementSystem.DAL.Data.PrisonDbContext'.
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method102(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method102(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+[2025-03-30 10:55:53.332 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 10:55:58.468 +04:00] [INF] HTTP GET /api/v1/reports/GetById/3F9BC16B-5143-48E1-3A27-08DD6F53F1C3 responded 200 in 12704.9081 ms 
+[2025-03-30 10:56:13.434 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 10:56:13.604 +04:00] [ERR] An exception occurred while iterating over the results of a query for context type 'PrisonManagementSystem.DAL.Data.PrisonDbContext'.
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method105(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: Cannot convert string value 'Incident' from the database to any value in the mapped 'ReportType' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method105(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+[2025-03-30 10:56:37.060 +04:00] [ERR] HTTP GET /api/v1/reports/GetAll responded 500 in 27948.4104 ms 
+[2025-03-30 11:00:11.614 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 11:00:15.648 +04:00] [INF] HTTP GET /api/v1/reports/GetAll responded 200 in 15527.4265 ms 
+[2025-03-30 11:01:50.629 +04:00] [INF] HTTP PUT /api/v1/reports/Update/b1a81091-1549-459a-55bc-08dd6b31b9ff responded 200 in 1112.7648 ms 
+[2025-03-30 11:01:59.376 +04:00] [INF] HTTP GET /api/v1/reports/GetAll responded 200 in 2103.8336 ms 
+[2025-03-30 11:02:52.301 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 11:02:55.255 +04:00] [INF] HTTP GET /api/v1/reports/GetById/b1a81091-1549-459a-55bc-08dd6b31b9ff responded 200 in 7597.8336 ms 
+[2025-03-30 13:59:37.826 +04:00] [INF] HTTP GET /api/v1/prisons responded 401 in 206.6973 ms 
+[2025-03-30 14:02:31.772 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-30 14:02:31.874 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-30 14:02:32.293 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 14:02:33.754 +04:00] [INF] HTTP GET /api/v1/prisons responded 200 in 6190.4762 ms 
+[2025-03-30 14:04:32.315 +04:00] [INF] HTTP POST /api/v1/staff responded 401 in 34.6362 ms 
+[2025-03-30 14:06:08.868 +04:00] [INF] HTTP POST /api/v1/staff responded 401 in 152.3745 ms 
+[2025-03-30 14:06:40.848 +04:00] [INF] HTTP POST /api/v1/staff responded 401 in 3.8528 ms 
+[2025-03-30 14:07:30.883 +04:00] [INF] HTTP POST /api/v1/staff responded 400 in 3480.9009 ms 
+[2025-03-30 14:07:53.830 +04:00] [INF] HTTP POST /api/v1/staff responded 400 in 33.6715 ms 
+[2025-03-30 14:07:55.335 +04:00] [INF] HTTP POST /api/v1/staff responded 400 in 16.8869 ms 
+[2025-03-30 14:09:50.602 +04:00] [INF] HTTP POST /api/v1/staff responded 400 in 3306.6658 ms 
+[2025-03-30 14:10:48.834 +04:00] [INF] HTTP POST /api/v1/staff responded 400 in 36.1577 ms 
+[2025-03-30 14:10:49.711 +04:00] [INF] HTTP POST /api/v1/staff responded 400 in 19.2477 ms 
+[2025-03-30 14:11:32.507 +04:00] [INF] HTTP POST /api/v1/staff responded 400 in 3378.8059 ms 
+[2025-03-30 14:11:46.095 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 14:11:47.435 +04:00] [INF] HTTP GET /api/v1/staff responded 200 in 2492.5229 ms 
+[2025-03-30 14:14:32.943 +04:00] [INF] HTTP POST /api/v1/staff responded 400 in 1277.8557 ms 
+[2025-03-30 14:15:08.123 +04:00] [INF] HTTP POST /api/v1/staff responded 400 in 47.9973 ms 
+[2025-03-30 14:15:09.448 +04:00] [INF] HTTP POST /api/v1/staff responded 400 in 13.7394 ms 
+[2025-03-30 14:15:35.509 +04:00] [INF] HTTP POST /api/v1/staff responded 400 in 17.3990 ms 
+[2025-03-30 14:15:44.662 +04:00] [INF] HTTP POST /api/v1/staff responded 400 in 3.4345 ms 
+[2025-03-30 14:17:03.322 +04:00] [INF] HTTP POST /api/v1/staff responded 400 in 102.3636 ms 
+[2025-03-30 14:17:20.757 +04:00] [INF] HTTP POST /api/v1/staff responded 400 in 16.5291 ms 
+[2025-03-30 14:17:25.815 +04:00] [INF] HTTP POST /api/v1/staff responded 400 in 6.1699 ms 
+[2025-03-30 14:26:52.102 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-30 14:26:52.201 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-30 14:26:52.573 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-30 14:26:53.928 +04:00] [INF] HTTP GET /api/v1/prisons responded 200 in 5838.0495 ms 
+[2025-03-30 14:27:48.973 +04:00] [INF] HTTP POST /api/v1/staff responded 400 in 335.1395 ms 
+[2025-03-30 14:28:48.099 +04:00] [INF] HTTP POST /api/v1/staff responded 400 in 44.2936 ms 
+[2025-03-30 14:31:11.814 +04:00] [INF] HTTP POST /api/visitors responded 401 in 61.2696 ms 
+[2025-03-30 14:33:17.870 +04:00] [INF] HTTP POST /api/v1/visitors responded 201 in 6122.0103 ms 
+[2025-03-30 14:33:32.247 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-30 14:33:32.250 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-30 14:33:32.667 +04:00] [INF] HTTP GET /api/v1/visitors responded 200 in 651.1077 ms 

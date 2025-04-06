@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BTG3l9hrfgKrEWA1U6w0x6UJyIfAYuyXnllcHDXfhEU=",
+  "Source": "PrisonManagementSystem.API",
+  "BasePath": "_content/PrisonManagementSystem.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

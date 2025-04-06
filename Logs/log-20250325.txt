@@ -1,0 +1,1113 @@
+[2025-03-25 00:22:30.947 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 00:22:31.098 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 00:22:33.769 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 9024.8467 ms 
+[2025-03-25 00:23:10.858 +04:00] [INF] HTTP GET /api/User/all responded 200 in 496.1900 ms 
+[2025-03-25 00:23:35.160 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 00:23:35.358 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 355.4035 ms 
+[2025-03-25 00:24:21.097 +04:00] [ERR] Ziyarətçi və görüş əlavə edilərkən xəta baş verdi. 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+VisitDto -> Visit
+PrisonManagementSystem.BL.DTOs.Visit.VisitDto -> PrisonManagementSystem.DAL.Entities.PrisonDBContext.Visit
+   at lambda_method353(Closure , Object , Visit , ResolutionContext )
+   at PrisonManagementSystem.BL.Services.Implementations.VisitorService.CreateVisitorAsync(CreateVisitorDto dto, VisitType visitType, Relationship relationship) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\VisitorService.cs:line 137
+[2025-03-25 00:24:21.266 +04:00] [ERR] HTTP POST /api/Visitor/CreateWithVisit responded 500 in 1623.6163 ms 
+[2025-03-25 00:35:57.528 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 201 in 25008.3723 ms 
+[2025-03-25 00:36:13.486 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 00:36:13.494 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 00:36:14.119 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 969.6846 ms 
+[2025-03-25 00:39:51.040 +04:00] [INF] HTTP POST /api/Visitor/CreateWithVisit responded 201 in 9294.6900 ms 
+[2025-03-25 00:40:02.291 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 00:40:02.298 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 00:40:02.928 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 973.8527 ms 
+[2025-03-25 00:40:15.490 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 85.7067 ms 
+[2025-03-25 00:48:00.683 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 00:48:00.800 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 00:48:03.179 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 8581.8415 ms 
+[2025-03-25 00:50:34.520 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 00:50:34.659 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 00:50:37.428 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 9742.6110 ms 
+[2025-03-25 00:50:49.907 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 137.9986 ms 
+[2025-03-25 00:51:09.984 +04:00] [INF] HTTP GET /api/Visitor/GetById/63be6568-fe7d-477d-97d5-c3b0b650ea57 responded 404 in 151.1357 ms 
+[2025-03-25 00:51:20.700 +04:00] [INF] HTTP GET /api/Visitor/GetById/63be6568-fe7d-477d-97d5-c3b0b650ea57 responded 404 in 30.1819 ms 
+[2025-03-25 00:51:38.736 +04:00] [INF] HTTP GET /api/Visit/GetById/63be6568-fe7d-477d-97d5-c3b0b650ea57 responded 200 in 75.3494 ms 
+[2025-03-25 00:51:58.141 +04:00] [INF] HTTP GET /api/Visitor/GetById/5b983ff9-8812-4d9c-167c-08dd6b14065f responded 200 in 37.1890 ms 
+[2025-03-25 00:55:32.610 +04:00] [INF] HTTP PUT /api/Visitor/Update/5b983ff9-8812-4d9c-167c-08dd6b14065f responded 400 in 2835.4207 ms 
+[2025-03-25 00:55:41.418 +04:00] [INF] HTTP PUT /api/Visitor/Update/5b983ff9-8812-4d9c-167c-08dd6b14065f responded 400 in 71.6805 ms 
+[2025-03-25 00:55:54.171 +04:00] [INF] HTTP PUT /api/Visitor/Update/5b983ff9-8812-4d9c-167c-08dd6b14065f responded 200 in 4153.1793 ms 
+[2025-03-25 00:56:03.521 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 00:56:03.527 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 00:56:04.176 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 878.3488 ms 
+[2025-03-25 00:57:47.015 +04:00] [INF] HTTP PUT /api/Visit/Update/63be6568-fe7d-477d-97d5-c3b0b650ea57 responded 400 in 128.2590 ms 
+[2025-03-25 00:58:03.916 +04:00] [INF] HTTP PUT /api/Visit/Update/63be6568-fe7d-477d-97d5-c3b0b650ea57 responded 200 in 157.5155 ms 
+[2025-03-25 00:58:20.544 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 61.2616 ms 
+[2025-03-25 00:58:39.753 +04:00] [INF] HTTP GET /api/Visit/GetById/63be6568-fe7d-477d-97d5-c3b0b650ea57 responded 200 in 41.1319 ms 
+[2025-03-25 00:59:12.269 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 00:59:12.274 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 00:59:12.316 +04:00] [INF] HTTP GET /api/Visit/GetAll responded 200 in 9723.4170 ms 
+[2025-03-25 01:04:25.496 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 01:04:25.709 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 01:04:27.971 +04:00] [INF] HTTP GET /api/Visit/GetAll responded 200 in 12800.7488 ms 
+[2025-03-25 01:04:32.201 +04:00] [INF] HTTP GET /api/Visit/GetAll responded 200 in 2020.2704 ms 
+[2025-03-25 01:05:20.280 +04:00] [INF] HTTP DELETE /api/Visit/Delete/ac0e3df6-2739-4d78-85e8-fdcece9e8141 responded 400 in 91.3169 ms 
+[2025-03-25 01:05:34.932 +04:00] [INF] HTTP DELETE /api/Visit/Delete/ac0e3df6-2739-4d78-85e8-fdcece9e8141 responded 400 in 39.5532 ms 
+[2025-03-25 01:06:20.548 +04:00] [INF] HTTP DELETE /api/Visit/Delete/63be6568-fe7d-477d-97d5-c3b0b650ea57 responded 200 in 881.7835 ms 
+[2025-03-25 01:06:44.706 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 01:06:44.711 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 01:06:45.098 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 470.4401 ms 
+[2025-03-25 01:07:15.342 +04:00] [INF] HTTP GET /api/Visit/GetAll responded 200 in 2094.1091 ms 
+[2025-03-25 01:07:56.073 +04:00] [INF] HTTP DELETE /api/Visit/Delete/18ecef28-690d-46d5-8fd3-0142f9aa05df responded 200 in 2557.7557 ms 
+[2025-03-25 01:08:12.637 +04:00] [INF] HTTP GET /api/Visitor/GetAll responded 200 in 48.4984 ms 
+[2025-03-25 01:18:26.396 +04:00] [INF] HTTP GET /api/Staff/GetAllActive responded 200 in 8469.9097 ms 
+[2025-03-25 01:24:53.238 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 01:24:53.271 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 01:24:53.413 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 01:24:54.023 +04:00] [INF] HTTP GET /api/Prison/GetAll responded 200 in 3698.6262 ms 
+[2025-03-25 01:25:47.292 +04:00] [INF] HTTP POST /api/Staff/Create responded 400 in 51.4272 ms 
+[2025-03-25 01:26:03.868 +04:00] [ERR] HTTP POST /api/Staff/Create responded 500 in 5966.9660 ms 
+[2025-03-25 01:31:24.232 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 01:31:24.318 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 01:31:24.748 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 01:31:26.182 +04:00] [INF] HTTP GET /api/Prison/GetAll responded 200 in 5941.6815 ms 
+[2025-03-25 01:32:31.161 +04:00] [INF] HTTP POST /api/Staff/Create responded 400 in 138.3261 ms 
+[2025-03-25 01:36:17.672 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 01:36:17.771 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 01:36:18.175 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 01:36:19.549 +04:00] [INF] HTTP GET /api/Prison/GetAll responded 200 in 6134.7452 ms 
+[2025-03-25 01:37:12.131 +04:00] [INF] HTTP POST /api/Staff/Create responded 400 in 170.1899 ms 
+[2025-03-25 01:43:15.011 +04:00] [ERR] HTTP POST /api/Staff/Create responded 500 in 18159.1107 ms 
+[2025-03-25 01:51:11.858 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 01:51:11.943 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 01:51:12.373 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 01:51:13.770 +04:00] [INF] HTTP GET /api/Prison/GetAll responded 200 in 5801.1003 ms 
+[2025-03-25 01:52:08.429 +04:00] [INF] HTTP POST /api/Staff/Create responded 400 in 256.1893 ms 
+[2025-03-25 01:53:18.672 +04:00] [ERR] HTTP POST /api/Staff/Create responded 500 in 58055.1668 ms 
+[2025-03-25 01:53:53.016 +04:00] [ERR] HTTP POST /api/Staff/Create responded 500 in 18211.6334 ms 
+[2025-03-25 03:09:01.303 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 03:09:01.450 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 03:09:02.036 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 03:09:04.149 +04:00] [INF] HTTP GET /api/Prison/GetAll responded 200 in 9088.0084 ms 
+[2025-03-25 03:09:29.750 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 03:09:29.974 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 452.0814 ms 
+[2025-03-25 03:09:59.566 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 03:09:59.571 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 03:09:59.647 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 03:09:59.811 +04:00] [INF] HTTP GET /api/Cell/GetAll responded 200 in 317.6542 ms 
+[2025-03-25 03:10:14.307 +04:00] [INF] HTTP GET /api/Cell/GetAll responded 200 in 98.8817 ms 
+[2025-03-25 03:11:18.997 +04:00] [INF] HTTP POST /api/Incident/Create responded 400 in 488.9079 ms 
+[2025-03-25 03:14:08.892 +04:00] [INF] HTTP POST /api/Incident/Create responded 200 in 30220.2129 ms 
+[2025-03-25 03:14:40.228 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 03:14:40.345 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 18661.7139 ms 
+[2025-03-25 03:15:23.966 +04:00] [INF] HTTP GET /api/Prison/GetAll responded 200 in 177.9497 ms 
+[2025-03-25 03:25:26.680 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 03:25:27.579 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 16367.4396 ms 
+[2025-03-25 03:32:45.350 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 03:32:47.503 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 11557.4231 ms 
+[2025-03-25 03:33:21.534 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 03:33:21.539 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 03:33:21.585 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 03:33:21.742 +04:00] [INF] HTTP GET /api/Cell/GetAll responded 200 in 348.0926 ms 
+[2025-03-25 03:33:44.054 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 03:33:44.058 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 03:33:44.114 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 03:33:44.257 +04:00] [INF] HTTP GET /api/Prison/GetAll responded 200 in 257.4240 ms 
+[2025-03-25 03:34:09.444 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 03:34:09.620 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 308.5266 ms 
+[2025-03-25 03:34:32.840 +04:00] [INF] HTTP POST /api/Incident/Create responded 400 in 92.7987 ms 
+[2025-03-25 03:35:32.134 +04:00] [INF] HTTP POST /api/Incident/Create responded 200 in 8589.1887 ms 
+[2025-03-25 03:35:45.453 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 1719.4629 ms 
+[2025-03-25 03:48:16.876 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Type Map configuration:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Destination Member:
+Prisoners
+
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at lambda_method329(Closure , PrisonerIncident )
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at lambda_method328(Closure , Object , GetIncidentDto , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method328(Closure , Object , GetIncidentDto , ResolutionContext )
+   at PrisonManagementSystem.BL.Services.Implementations.IncidentService.CreateIncidentAsync(CreateIncidentDto dto, IncidentStatus status, IncidentType type) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\IncidentService.cs:line 161
+   at PrisonManagementSystem.API.Controllers.IncidentController.CreateIncident(CreateIncidentDto dto, IncidentStatus status, IncidentType type) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\IncidentController.cs:line 30
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-25 03:48:17.253 +04:00] [ERR] Error: Error mapping types.
+
+Mapping types:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Type Map configuration:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Destination Member:
+Prisoners
+ | Path: /api/Incident/Create 
+[2025-03-25 03:48:17.279 +04:00] [ERR] HTTP POST /api/Incident/Create responded 500 in 13300.0855 ms 
+[2025-03-25 03:49:10.139 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Type Map configuration:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Destination Member:
+Prisoners
+
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at lambda_method329(Closure , PrisonerIncident )
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at lambda_method328(Closure , Object , GetIncidentDto , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method328(Closure , Object , GetIncidentDto , ResolutionContext )
+   at PrisonManagementSystem.BL.Services.Implementations.IncidentService.CreateIncidentAsync(CreateIncidentDto dto, IncidentStatus status, IncidentType type) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\IncidentService.cs:line 161
+   at PrisonManagementSystem.API.Controllers.IncidentController.CreateIncident(CreateIncidentDto dto, IncidentStatus status, IncidentType type) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\IncidentController.cs:line 30
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-25 03:49:10.151 +04:00] [ERR] Error: Error mapping types.
+
+Mapping types:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Type Map configuration:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Destination Member:
+Prisoners
+ | Path: /api/Incident/Create 
+[2025-03-25 03:49:10.153 +04:00] [ERR] HTTP POST /api/Incident/Create responded 500 in 49332.3864 ms 
+[2025-03-25 03:56:12.927 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Type Map configuration:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Destination Member:
+Prisoners
+
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at lambda_method330(Closure , PrisonerIncident )
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at lambda_method329(Closure , Object , GetIncidentDto , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method329(Closure , Object , GetIncidentDto , ResolutionContext )
+   at PrisonManagementSystem.BL.Services.Implementations.IncidentService.CreateIncidentAsync(CreateIncidentDto dto, IncidentStatus status, IncidentType type) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\IncidentService.cs:line 157
+   at PrisonManagementSystem.API.Controllers.IncidentController.CreateIncident(CreateIncidentDto dto, IncidentStatus status, IncidentType type) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\IncidentController.cs:line 30
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-25 03:56:13.086 +04:00] [ERR] Error: Error mapping types.
+
+Mapping types:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Type Map configuration:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Destination Member:
+Prisoners
+ | Path: /api/Incident/Create 
+[2025-03-25 03:56:13.099 +04:00] [ERR] HTTP POST /api/Incident/Create responded 500 in 32030.3469 ms 
+[2025-03-25 04:01:20.486 +04:00] [INF] HTTP POST /api/Incident/Create responded 200 in 4187.5291 ms 
+[2025-03-25 04:01:34.222 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 04:01:34.352 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 2994.8567 ms 
+[2025-03-25 04:02:04.210 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 1913.1365 ms 
+[2025-03-25 04:02:38.197 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 04:02:38.253 +04:00] [INF] HTTP GET /api/Incident/GetById/844389ac-6bb0-4234-082e-08dd6b302c34 responded 200 in 110.7690 ms 
+[2025-03-25 04:07:37.389 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 04:07:39.415 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 12393.2859 ms 
+[2025-03-25 04:08:50.389 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+System.InvalidOperationException: The expression 'pi.Prisoner.FirstName' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.PopulateIncludeTree(IncludeTreeNode includeTreeNode, Expression expression, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at RepositoryRead`1.GetAllByPagingAsync(Expression`1 predicate, Func`2 include, Func`2 orderBy, Boolean enableTracking, Boolean isDeleted, Int32 currentPage, Int32 pageSize) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.DAL\Repositories\Implementations\Base\GenericRepository\RepositoryRead.cs:line 62
+   at PrisonManagementSystem.BL.Services.Implementations.IncidentService.GetAllIncidentsAsync(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\IncidentService.cs:line 226
+   at PrisonManagementSystem.API.Controllers.IncidentController.GetAllIncidents(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\IncidentController.cs:line 20
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-25 04:08:50.773 +04:00] [ERR] Error: The expression 'pi.Prisoner.FirstName' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393. | Path: /api/Incident/GetAll 
+[2025-03-25 04:08:50.796 +04:00] [ERR] HTTP GET /api/Incident/GetAll responded 500 in 8965.0692 ms 
+[2025-03-25 04:09:02.836 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+System.InvalidOperationException: The expression 'pi.Prisoner.FirstName' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.PopulateIncludeTree(IncludeTreeNode includeTreeNode, Expression expression, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at RepositoryRead`1.GetAllByPagingAsync(Expression`1 predicate, Func`2 include, Func`2 orderBy, Boolean enableTracking, Boolean isDeleted, Int32 currentPage, Int32 pageSize) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.DAL\Repositories\Implementations\Base\GenericRepository\RepositoryRead.cs:line 62
+   at PrisonManagementSystem.BL.Services.Implementations.IncidentService.GetAllIncidentsAsync(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\IncidentService.cs:line 226
+   at PrisonManagementSystem.API.Controllers.IncidentController.GetAllIncidents(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\IncidentController.cs:line 20
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-25 04:09:02.869 +04:00] [ERR] Error: The expression 'pi.Prisoner.FirstName' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393. | Path: /api/Incident/GetAll 
+[2025-03-25 04:09:02.872 +04:00] [ERR] HTTP GET /api/Incident/GetAll responded 500 in 4216.9662 ms 
+[2025-03-25 04:12:27.813 +04:00] [INF] HTTP POST /api/Incident/Create responded 200 in 10194.3547 ms 
+[2025-03-25 04:13:56.011 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 04:13:58.057 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 12542.7750 ms 
+[2025-03-25 04:14:27.431 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Type Map configuration:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Destination Member:
+Prisoners
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+String -> GetPrisonerDto
+System.String -> PrisonManagementSystem.BL.DTOs.Prisoner.GetPrisonerDto
+   at lambda_method86(Closure , String , GetPrisonerDto , ResolutionContext )
+   at lambda_method83(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method83(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method83(Closure , Object , List`1 , ResolutionContext )
+   at PrisonManagementSystem.BL.Services.Implementations.IncidentService.GetAllIncidentsAsync(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\IncidentService.cs:line 240
+   at PrisonManagementSystem.API.Controllers.IncidentController.GetAllIncidents(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\IncidentController.cs:line 20
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-25 04:14:27.504 +04:00] [ERR] Error: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] | Path: /api/Incident/GetAll 
+[2025-03-25 04:14:27.534 +04:00] [ERR] HTTP GET /api/Incident/GetAll responded 500 in 2004.9998 ms 
+[2025-03-25 04:14:40.746 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Type Map configuration:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Destination Member:
+Prisoners
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+String -> GetPrisonerDto
+System.String -> PrisonManagementSystem.BL.DTOs.Prisoner.GetPrisonerDto
+   at lambda_method86(Closure , String , GetPrisonerDto , ResolutionContext )
+   at lambda_method83(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method83(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method83(Closure , Object , List`1 , ResolutionContext )
+   at PrisonManagementSystem.BL.Services.Implementations.IncidentService.GetAllIncidentsAsync(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\IncidentService.cs:line 240
+   at PrisonManagementSystem.API.Controllers.IncidentController.GetAllIncidents(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\IncidentController.cs:line 20
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-25 04:14:40.754 +04:00] [ERR] Error: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] | Path: /api/Incident/GetAll 
+[2025-03-25 04:14:40.754 +04:00] [ERR] HTTP GET /api/Incident/GetAll responded 500 in 5092.9052 ms 
+[2025-03-25 04:15:11.308 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Type Map configuration:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Destination Member:
+Prisoners
+
+ ---> System.MissingMethodException: Attempted to invoke a deleted method implementation. This can happen when a method is deleted or its name or signature is changed while the application is running.
+   at PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto.set_Prisoners(List`1 value)
+   at lambda_method83(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method83(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method83(Closure , Object , List`1 , ResolutionContext )
+   at PrisonManagementSystem.BL.Services.Implementations.IncidentService.GetAllIncidentsAsync(PaginationRequest paginationRequest)
+   at PrisonManagementSystem.API.Controllers.IncidentController.GetAllIncidents(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\IncidentController.cs:line 20
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-25 04:15:11.327 +04:00] [ERR] Error: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] | Path: /api/Incident/GetAll 
+[2025-03-25 04:15:11.328 +04:00] [ERR] HTTP GET /api/Incident/GetAll responded 500 in 5876.8625 ms 
+[2025-03-25 04:16:06.624 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 04:16:08.616 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 12216.6666 ms 
+[2025-03-25 04:16:14.874 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 1410.0110 ms 
+[2025-03-25 04:30:46.321 +04:00] [INF] HTTP POST /api/Incident/Create responded 200 in 28515.1758 ms 
+[2025-03-25 04:31:02.974 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 04:31:03.868 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 3949.5003 ms 
+[2025-03-25 04:31:20.042 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 2061.4491 ms 
+[2025-03-25 11:06:42.818 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 11:06:44.165 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 14874.2072 ms 
+[2025-03-25 11:06:47.068 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 84.9429 ms 
+[2025-03-25 11:07:36.509 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 11:07:36.721 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 359.9669 ms 
+[2025-03-25 11:08:36.696 +04:00] [INF] HTTP POST /api/Punishment/Create responded 201 in 31542.2306 ms 
+[2025-03-25 11:08:46.262 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 11:08:46.399 +04:00] [INF] HTTP GET /api/Punishment/GetAll responded 200 in 275.2784 ms 
+[2025-03-25 11:09:29.858 +04:00] [INF] HTTP POST /api/Punishment/Create responded 400 in 12833.0829 ms 
+[2025-03-25 11:09:44.027 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 180.7693 ms 
+[2025-03-25 11:27:59.384 +04:00] [INF] HTTP GET /api/Punishment/GetAll responded 200 in 8871.4827 ms 
+[2025-03-25 11:33:54.237 +04:00] [INF] HTTP GET /api/Punishment/GetAll responded 200 in 9762.7248 ms 
+[2025-03-25 11:34:24.807 +04:00] [INF] HTTP GET /api/Punishment/GetById/37635b3a-a43d-4e52-f9de-08dd6b6bdaaa responded 200 in 211.3124 ms 
+[2025-03-25 11:40:28.860 +04:00] [INF] HTTP GET /api/Punishment/GetAll responded 200 in 8692.3249 ms 
+[2025-03-25 11:42:26.775 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 11:42:26.927 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 416.9128 ms 
+[2025-03-25 11:42:34.398 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 69.9972 ms 
+[2025-03-25 11:48:44.915 +04:00] [INF] HTTP GET /api/Punishment/GetAll responded 200 in 9720.0581 ms 
+[2025-03-25 11:49:24.627 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 11:49:24.770 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 394.7923 ms 
+[2025-03-25 11:49:37.462 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 102.7858 ms 
+[2025-03-25 11:49:58.443 +04:00] [INF] HTTP PUT /api/Punishment/Update/37635b3a-a43d-4e52-f9de-08dd6b6bdaaa responded 200 in 1177.3040 ms 
+[2025-03-25 11:50:05.963 +04:00] [INF] HTTP GET /api/Punishment/GetAll responded 200 in 61.9073 ms 
+[2025-03-25 12:00:43.667 +04:00] [INF] HTTP GET /api/Punishment/GetAll responded 200 in 5754.4658 ms 
+[2025-03-25 12:01:13.823 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 12:01:13.927 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 269.3251 ms 
+[2025-03-25 12:01:44.849 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 12:01:44.983 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 287.1412 ms 
+[2025-03-25 12:01:48.520 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 31.0419 ms 
+[2025-03-25 12:02:10.623 +04:00] [INF] HTTP PUT /api/Punishment/Update/37635b3a-a43d-4e52-f9de-08dd6b6bdaaa responded 200 in 855.9749 ms 
+[2025-03-25 12:04:27.205 +04:00] [INF] HTTP PUT /api/Punishment/Update/37635b3a-a43d-4e52-f9de-08dd6b6bdaaa responded 200 in 35.0252 ms 
+[2025-03-25 12:06:18.426 +04:00] [INF] HTTP PUT /api/Punishment/Update/37635b3a-a43d-4e52-f9de-08dd6b6bdaaa responded 400 in 23207.2734 ms 
+[2025-03-25 12:06:30.406 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 12:06:30.659 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 709.8508 ms 
+[2025-03-25 12:06:36.873 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 64.2355 ms 
+[2025-03-25 12:07:44.389 +04:00] [INF] HTTP PUT /api/Punishment/Update/37635b3a-a43d-4e52-f9de-08dd6b6bdaaa responded 400 in 1932.6788 ms 
+[2025-03-25 12:08:17.267 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 12:08:17.311 +04:00] [INF] HTTP GET /api/prisoners/df20bae4-1b81-47f3-3eb1-08dd6872f890 responded 200 in 63.6643 ms 
+[2025-03-25 12:08:47.721 +04:00] [INF] HTTP PUT /api/Punishment/Update/37635b3a-a43d-4e52-f9de-08dd6b6bdaaa responded 400 in 9691.4794 ms 
+[2025-03-25 12:08:58.061 +04:00] [INF] HTTP GET /api/prisoners/df20bae4-1b81-47f3-3eb1-08dd6872f890 responded 200 in 1817.4722 ms 
+[2025-03-25 12:23:33.770 +04:00] [INF] HTTP GET /api/Punishment/GetAll responded 200 in 5797.5473 ms 
+[2025-03-25 12:23:55.957 +04:00] [INF] HTTP PUT /api/Punishment/Update/37635b3a-a43d-4e52-f9de-08dd6b6bdaaa responded 200 in 6455.5235 ms 
+[2025-03-25 12:24:18.991 +04:00] [INF] HTTP PUT /api/Punishment/Update/37635b3a-a43d-4e52-f9de-08dd6b6bdaaa responded 200 in 13785.9928 ms 
+[2025-03-25 12:24:29.489 +04:00] [INF] HTTP GET /api/Punishment/GetAll responded 200 in 1931.7946 ms 
+[2025-03-25 12:24:48.050 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 12:24:48.126 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 2096.0840 ms 
+[2025-03-25 12:25:19.230 +04:00] [INF] HTTP PUT /api/Punishment/Update/37635b3a-a43d-4e52-f9de-08dd6b6bdaaa responded 400 in 10748.4525 ms 
+[2025-03-25 12:25:28.437 +04:00] [INF] HTTP GET /api/Punishment/GetAll responded 200 in 73.9706 ms 
+[2025-03-25 12:26:05.269 +04:00] [INF] HTTP DELETE /api/Punishment/Delete/37635b3a-a43d-4e52-f9de-08dd6b6bdaaa responded 400 in 3049.1789 ms 
+[2025-03-25 13:02:51.852 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 13:02:53.400 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 6122.6853 ms 
+[2025-03-25 13:03:37.580 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 13:03:37.707 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 270.9974 ms 
+[2025-03-25 13:03:47.246 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 70.7971 ms 
+[2025-03-25 13:06:34.727 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 13:06:34.728 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 13:06:34.756 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 13:06:34.848 +04:00] [INF] HTTP GET /api/Cell/GetAll responded 200 in 161.0623 ms 
+[2025-03-25 13:07:43.689 +04:00] [INF] HTTP PUT /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 responded 200 in 957.7473 ms 
+[2025-03-25 13:07:55.919 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 82.7077 ms 
+[2025-03-25 13:08:05.353 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 20.4096 ms 
+[2025-03-25 13:10:55.536 +04:00] [INF] HTTP PUT /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 responded 200 in 61317.4870 ms 
+[2025-03-25 13:11:33.214 +04:00] [INF] HTTP GET /api/Cell/GetAll responded 200 in 63.6462 ms 
+[2025-03-25 13:12:00.284 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 88.9268 ms 
+[2025-03-25 13:28:03.278 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 13:28:04.869 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 6281.0075 ms 
+[2025-03-25 13:28:12.231 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 189.9397 ms 
+[2025-03-25 13:30:38.177 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Type Map configuration:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Destination Member:
+Prisoners
+
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at lambda_method353(Closure , PrisonerIncident )
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at lambda_method352(Closure , Object , GetIncidentDto , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method352(Closure , Object , GetIncidentDto , ResolutionContext )
+   at PrisonManagementSystem.BL.Services.Implementations.IncidentService.UpdateIncidentAsync(Guid id, UpdateIncidentDto updateIncidentDto) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\IncidentService.cs:line 277
+   at PrisonManagementSystem.API.Controllers.IncidentController.UpdateIncident(Guid incidentId, UpdateIncidentDto dto) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\IncidentController.cs:line 34
+   at lambda_method89(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-25 13:30:38.248 +04:00] [ERR] Error: Error mapping types.
+
+Mapping types:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Type Map configuration:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Destination Member:
+Prisoners
+ | Path: /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 
+[2025-03-25 13:30:38.252 +04:00] [ERR] HTTP PUT /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 responded 500 in 129504.8757 ms 
+[2025-03-25 13:31:29.483 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Type Map configuration:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Destination Member:
+Prisoners
+
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at lambda_method353(Closure , PrisonerIncident )
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at lambda_method352(Closure , Object , GetIncidentDto , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method352(Closure , Object , GetIncidentDto , ResolutionContext )
+   at PrisonManagementSystem.BL.Services.Implementations.IncidentService.UpdateIncidentAsync(Guid id, UpdateIncidentDto updateIncidentDto) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\IncidentService.cs:line 277
+   at PrisonManagementSystem.API.Controllers.IncidentController.UpdateIncident(Guid incidentId, UpdateIncidentDto dto) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\IncidentController.cs:line 34
+   at lambda_method89(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-25 13:31:29.487 +04:00] [ERR] Error: Error mapping types.
+
+Mapping types:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Type Map configuration:
+Incident -> GetIncidentDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Incident -> PrisonManagementSystem.BL.DTOs.Incident.GetIncidentDto
+
+Destination Member:
+Prisoners
+ | Path: /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 
+[2025-03-25 13:31:29.488 +04:00] [ERR] HTTP PUT /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 responded 500 in 42021.2254 ms 
+[2025-03-25 13:37:00.581 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 13:37:02.053 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 6113.0378 ms 
+[2025-03-25 13:37:17.902 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 113.3483 ms 
+[2025-03-25 13:38:02.437 +04:00] [INF] HTTP PUT /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 responded 200 in 1248.0214 ms 
+[2025-03-25 13:39:05.736 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 13:39:05.860 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 202.2048 ms 
+[2025-03-25 13:39:09.906 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 86.9371 ms 
+[2025-03-25 13:39:31.854 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 13:39:31.856 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 13:39:31.883 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 13:39:31.971 +04:00] [INF] HTTP GET /api/Cell/GetAll responded 200 in 154.3135 ms 
+[2025-03-25 13:40:13.851 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 98.3589 ms 
+[2025-03-25 13:55:53.239 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UpdateIncidentDto -> Prisoner
+PrisonManagementSystem.BL.DTOs.Incident.UpdateIncidentDto -> PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prisoner
+   at lambda_method96(Closure , UpdateIncidentDto , Prisoner , ResolutionContext )
+   at PrisonManagementSystem.BL.Services.Implementations.IncidentService.UpdateIncidentAsync(Guid id, UpdateIncidentDto updateIncidentDto) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\IncidentService.cs:line 280
+   at PrisonManagementSystem.API.Controllers.IncidentController.UpdateIncident(Guid incidentId, UpdateIncidentDto dto) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\IncidentController.cs:line 34
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-25 13:55:53.461 +04:00] [ERR] Error: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UpdateIncidentDto -> Prisoner
+PrisonManagementSystem.BL.DTOs.Incident.UpdateIncidentDto -> PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prisoner | Path: /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 
+[2025-03-25 13:55:53.481 +04:00] [ERR] HTTP PUT /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 responded 500 in 6754.9747 ms 
+[2025-03-25 13:56:32.509 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UpdateIncidentDto -> Prisoner
+PrisonManagementSystem.BL.DTOs.Incident.UpdateIncidentDto -> PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prisoner
+   at lambda_method96(Closure , UpdateIncidentDto , Prisoner , ResolutionContext )
+   at PrisonManagementSystem.BL.Services.Implementations.IncidentService.UpdateIncidentAsync(Guid id, UpdateIncidentDto updateIncidentDto) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\IncidentService.cs:line 280
+   at PrisonManagementSystem.API.Controllers.IncidentController.UpdateIncident(Guid incidentId, UpdateIncidentDto dto) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\IncidentController.cs:line 34
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-25 13:56:32.513 +04:00] [ERR] Error: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UpdateIncidentDto -> Prisoner
+PrisonManagementSystem.BL.DTOs.Incident.UpdateIncidentDto -> PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prisoner | Path: /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 
+[2025-03-25 13:56:32.514 +04:00] [ERR] HTTP PUT /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 responded 500 in 18456.7418 ms 
+[2025-03-25 14:45:49.326 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 14:45:51.503 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 9179.6708 ms 
+[2025-03-25 14:45:58.448 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 175.5510 ms 
+[2025-03-25 14:46:52.393 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 14:46:52.586 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 326.1977 ms 
+[2025-03-25 14:48:11.979 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 14:48:11.983 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 14:48:12.024 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 14:48:12.165 +04:00] [INF] HTTP GET /api/Cell/GetAll responded 200 in 235.5947 ms 
+[2025-03-25 14:49:37.004 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+System.ArgumentNullException: Value cannot be null. (Parameter 'entities')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.RemoveRange(IEnumerable`1 entities)
+   at PrisonManagementSystem.DAL.Repositories.Implementations.Base.RepositoryWrite`1.RemoveRangeAsync(IEnumerable`1 entities) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.DAL\Repositories\Implementations\Base\GenericRepository\RepositoryWrite.cs:line 130
+   at PrisonManagementSystem.BL.Services.Implementations.IncidentService.UpdateIncidentAsync(Guid id, UpdateIncidentDto updateIncidentDto) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\IncidentService.cs:line 244
+   at PrisonManagementSystem.API.Controllers.IncidentController.UpdateIncident(Guid incidentId, UpdateIncidentDto dto) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\IncidentController.cs:line 34
+   at lambda_method179(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-25 14:49:37.125 +04:00] [ERR] Error: Value cannot be null. (Parameter 'entities') | Path: /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 
+[2025-03-25 14:49:37.131 +04:00] [INF] HTTP PUT /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 responded 400 in 21480.3167 ms 
+[2025-03-25 14:54:46.308 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at PrisonManagementSystem.BL.Services.Implementations.IncidentService.UpdateIncidentAsync(Guid id, UpdateIncidentDto updateIncidentDto)
+   at PrisonManagementSystem.API.Controllers.IncidentController.UpdateIncident(Guid incidentId, UpdateIncidentDto dto) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\IncidentController.cs:line 34
+   at lambda_method179(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-25 14:54:46.314 +04:00] [ERR] Error: Value cannot be null. (Parameter 'source') | Path: /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 
+[2025-03-25 14:54:46.315 +04:00] [INF] HTTP PUT /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 responded 400 in 14678.1903 ms 
+[2025-03-25 14:56:17.889 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at PrisonManagementSystem.BL.Services.Implementations.IncidentService.UpdateIncidentAsync(Guid id, UpdateIncidentDto updateIncidentDto)
+   at PrisonManagementSystem.API.Controllers.IncidentController.UpdateIncident(Guid incidentId, UpdateIncidentDto dto) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\IncidentController.cs:line 34
+   at lambda_method198(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-25 14:56:17.901 +04:00] [ERR] Error: Value cannot be null. (Parameter 'source') | Path: /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 
+[2025-03-25 14:56:17.902 +04:00] [INF] HTTP PUT /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 responded 400 in 9849.1749 ms 
+[2025-03-25 15:01:49.940 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 15:02:13.233 +04:00] [INF] HTTP PUT /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 responded 200 in 33334.0004 ms 
+[2025-03-25 15:02:29.694 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 15:02:29.969 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 719.5860 ms 
+[2025-03-25 15:02:32.985 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 175.7768 ms 
+[2025-03-25 15:03:02.157 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 118.8968 ms 
+[2025-03-25 15:04:35.935 +04:00] [INF] HTTP PUT /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 responded 400 in 46.6817 ms 
+[2025-03-25 15:06:43.979 +04:00] [INF] HTTP PUT /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 responded 200 in 120156.5355 ms 
+[2025-03-25 15:06:55.009 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 2188.7613 ms 
+[2025-03-25 15:09:03.382 +04:00] [INF] HTTP PUT /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 responded 200 in 9883.1929 ms 
+[2025-03-25 15:09:11.260 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 15:09:11.338 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 175.0719 ms 
+[2025-03-25 15:15:16.284 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 15:15:29.084 +04:00] [INF] HTTP PUT /api/Incident/Update/518b3eb1-8881-42bb-a2eb-08dd6b3441a6 responded 200 in 16808.4617 ms 
+[2025-03-25 15:16:04.765 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 15:16:04.877 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 218.1640 ms 
+[2025-03-25 15:45:21.186 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 15:45:21.312 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 15:45:21.931 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 15:45:24.103 +04:00] [INF] HTTP GET /api/Cell/GetAll responded 200 in 9409.6860 ms 
+[2025-03-25 15:45:33.026 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 15:45:33.205 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 396.6131 ms 
+[2025-03-25 15:48:48.420 +04:00] [INF] HTTP POST /api/Incident/Create responded 400 in 435.4357 ms 
+[2025-03-25 15:49:13.619 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 15:49:13.621 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 15:49:13.666 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 15:49:13.857 +04:00] [INF] HTTP GET /api/Prison/GetAll responded 200 in 303.1924 ms 
+[2025-03-25 15:49:34.423 +04:00] [INF] HTTP POST /api/Incident/Create responded 200 in 1732.0118 ms 
+[2025-03-25 15:50:13.769 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 15:50:13.933 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 278.2591 ms 
+[2025-03-25 15:50:25.703 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 80.4481 ms 
+[2025-03-25 15:52:51.086 +04:00] [INF] HTTP POST /api/Incident/Create responded 400 in 30542.3565 ms 
+[2025-03-25 15:53:07.708 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 15:53:07.715 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 15:53:07.855 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 15:53:08.135 +04:00] [INF] HTTP GET /api/Cell/GetAll responded 200 in 638.4730 ms 
+[2025-03-25 15:53:35.757 +04:00] [INF] HTTP POST /api/Incident/Create responded 200 in 3080.9116 ms 
+[2025-03-25 15:53:46.423 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 15:53:46.505 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 134.1809 ms 
+[2025-03-25 16:02:35.800 +04:00] [INF] HTTP DELETE /api/Incident/Delete/4862d511-c718-43de-18b2-08dd6b931bf1 responded 400 in 103.8339 ms 
+[2025-03-25 16:03:28.012 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 16:03:28.067 +04:00] [INF] HTTP GET /api/Incident/GetById/6b03d2b8-2755-4272-9e3a-08dd6b93ac08 responded 200 in 119.7276 ms 
+[2025-03-25 20:41:40.642 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 20:41:43.172 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 9461.0560 ms 
+[2025-03-25 20:42:30.478 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 20:42:30.685 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 434.3500 ms 
+[2025-03-25 20:43:14.585 +04:00] [INF] HTTP POST /api/Punishment/Create responded 201 in 23496.6028 ms 
+[2025-03-25 20:45:42.177 +04:00] [INF] HTTP GET /api/Punishment/GetAll responded 200 in 166.9392 ms 
+[2025-03-25 20:46:17.086 +04:00] [INF] HTTP GET /api/Punishment/GetById/58d9c80e-3327-42a4-6579-08dd6bbc1fc4 responded 200 in 95.6008 ms 
+[2025-03-25 20:47:26.896 +04:00] [INF] HTTP PUT /api/Punishment/Update/58d9c80e-3327-42a4-6579-08dd6bbc1fc4 responded 200 in 14398.9496 ms 
+[2025-03-25 20:48:07.919 +04:00] [INF] HTTP GET /api/Punishment/GetById/58d9c80e-3327-42a4-6579-08dd6bbc1fc4 responded 200 in 93.7698 ms 
+[2025-03-25 20:49:33.345 +04:00] [INF] HTTP PUT /api/Punishment/Update/58d9c80e-3327-42a4-6579-08dd6bbc1fc4 responded 200 in 11471.4641 ms 
+[2025-03-25 20:49:53.174 +04:00] [INF] HTTP GET /api/Punishment/GetById/58d9c80e-3327-42a4-6579-08dd6bbc1fc4 responded 200 in 2210.5253 ms 
+[2025-03-25 21:06:55.897 +04:00] [INF] HTTP GET /api/Punishment/GetAll responded 200 in 9200.7863 ms 
+[2025-03-25 21:07:56.514 +04:00] [INF] HTTP PUT /api/Punishment/Update/58d9c80e-3327-42a4-6579-08dd6bbc1fc4 responded 200 in 24510.3879 ms 
+[2025-03-25 21:08:27.207 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 21:08:27.401 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 435.2854 ms 
+[2025-03-25 21:09:10.171 +04:00] [INF] HTTP PUT /api/Punishment/Update/58d9c80e-3327-42a4-6579-08dd6bbc1fc4 responded 200 in 17447.0878 ms 
+[2025-03-25 21:09:36.863 +04:00] [INF] HTTP GET /api/Punishment/GetAll responded 200 in 1869.1510 ms 
+[2025-03-25 21:10:30.269 +04:00] [INF] HTTP GET /api/Punishment/GetById/58d9c80e-3327-42a4-6579-08dd6bbc1fc4 responded 200 in 101.1997 ms 
+[2025-03-25 21:10:50.017 +04:00] [INF] HTTP DELETE /api/Punishment/Delete/58d9c80e-3327-42a4-6579-08dd6bbc1fc4 responded 400 in 1688.9198 ms 
+[2025-03-25 21:11:23.168 +04:00] [INF] HTTP DELETE /api/Punishment/Delete/58d9c80e-3327-42a4-6579-08dd6bbc1fc4 responded 200 in 6273.9996 ms 
+[2025-03-25 21:19:08.272 +04:00] [INF] HTTP GET /api/Punishment/GetAll responded 200 in 8887.1796 ms 
+[2025-03-25 21:19:33.257 +04:00] [INF] HTTP DELETE /api/Punishment/Delete/37635b3a-a43d-4e52-f9de-08dd6b6bdaaa responded 200 in 4346.9953 ms 
+[2025-03-25 21:20:25.984 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 21:20:26.152 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 335.3933 ms 
+[2025-03-25 22:09:34.223 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 22:09:34.372 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 22:09:34.999 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 22:09:36.892 +04:00] [INF] HTTP GET /api/Cell/GetAll responded 200 in 10556.2086 ms 
+[2025-03-25 22:09:55.020 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 22:09:55.022 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 22:09:55.037 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 22:09:55.055 +04:00] [INF] HTTP GET /api/Cell/GetAll responded 200 in 14519.4735 ms 
+[2025-03-25 22:13:57.522 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 22:13:57.643 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 22:13:58.281 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 22:14:00.308 +04:00] [INF] HTTP GET /api/Prison/GetAll responded 200 in 9081.2178 ms 
+[2025-03-25 22:15:35.390 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 22:15:35.390 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 22:15:35.418 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 22:15:35.493 +04:00] [INF] HTTP GET /api/Cell/GetAll responded 200 in 5113.2880 ms 
+[2025-03-25 23:01:34.544 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 23:01:34.689 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 23:01:35.337 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 23:01:37.475 +04:00] [INF] HTTP GET /api/Prison/GetAll responded 200 in 9399.3714 ms 
+[2025-03-25 23:07:46.579 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 23:07:46.718 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 23:07:47.350 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 23:07:49.109 +04:00] [INF] HTTP GET /api/Cell/GetAll responded 200 in 13480.1821 ms 
+[2025-03-25 23:11:25.628 +04:00] [INF] HTTP POST /api/prisoners responded 400 in 118.3747 ms 
+[2025-03-25 23:11:51.518 +04:00] [INF] HTTP POST /api/prisoners responded 400 in 24.6307 ms 
+[2025-03-25 23:12:21.100 +04:00] [INF] HTTP POST /api/prisoners responded 201 in 20693.6126 ms 
+[2025-03-25 23:12:57.283 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 23:12:57.457 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 3548.3584 ms 
+[2025-03-25 23:31:36.278 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 23:31:38.724 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 9365.9254 ms 
+[2025-03-25 23:34:24.004 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 23:34:24.007 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 23:34:24.046 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 23:34:24.172 +04:00] [INF] HTTP GET /api/Cell/GetAll responded 200 in 2468.3058 ms 
+[2025-03-25 23:49:02.121 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 23:49:02.124 +04:00] [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+[2025-03-25 23:49:02.168 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 23:49:02.389 +04:00] [INF] HTTP GET /api/Prison/GetAll responded 200 in 351.0109 ms 
+[2025-03-25 23:49:50.542 +04:00] [INF] HTTP POST /api/Incident/Create responded 200 in 2033.3843 ms 
+[2025-03-25 23:50:00.197 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 23:50:00.347 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 258.5793 ms 
+[2025-03-25 23:50:27.136 +04:00] [INF] HTTP GET /api/Incident/GetAll responded 200 in 71.6426 ms 
+[2025-03-25 23:51:03.172 +04:00] [INF] HTTP GET /api/Cell/GetAll responded 200 in 2136.0646 ms 
+[2025-03-25 23:51:16.369 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 109.8060 ms 
+[2025-03-25 23:53:45.064 +04:00] [INF] HTTP GET /api/prisoners responded 200 in 87.5270 ms 
+[2025-03-25 23:56:06.770 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 23:56:09.153 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prisoner, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Prisoner.GetPrisonerDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Prisoner -> GetPrisonerDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prisoner -> PrisonManagementSystem.BL.DTOs.Prisoner.GetPrisonerDto
+
+Type Map configuration:
+Prisoner -> GetPrisonerDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prisoner -> PrisonManagementSystem.BL.DTOs.Prisoner.GetPrisonerDto
+
+Destination Member:
+Transfers
+
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at lambda_method101(Closure , Transfer )
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at lambda_method99(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method99(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method99(Closure , Object , List`1 , ResolutionContext )
+   at PrisonerService.GetAllPrisonersAsync(PaginationRequest request) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\Services\Implementations\PrisonerService.cs:line 66
+   at PrisonManagementSystem.API.Controllers.PrisonerController.GetAllAsync(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\PrisonerController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-25 23:56:09.399 +04:00] [ERR] Error: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prisoner, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Prisoner.GetPrisonerDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] | Path: /api/prisoners 
+[2025-03-25 23:56:09.433 +04:00] [ERR] HTTP GET /api/prisoners responded 500 in 12764.0919 ms 
+[2025-03-25 23:56:54.796 +04:00] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+[2025-03-25 23:56:57.143 +04:00] [ERR] An unhandled exception has occurred while executing the request. 
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prisoner, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Prisoner.GetPrisonerDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Prisoner -> GetPrisonerDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prisoner -> PrisonManagementSystem.BL.DTOs.Prisoner.GetPrisonerDto
+
+Type Map configuration:
+Prisoner -> GetPrisonerDto
+PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prisoner -> PrisonManagementSystem.BL.DTOs.Prisoner.GetPrisonerDto
+
+Destination Member:
+Transfers
+
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at lambda_method101(Closure , Transfer )
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at lambda_method99(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method99(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method99(Closure , Object , List`1 , ResolutionContext )
+   at PrisonerService.GetAllPrisonersAsync(PaginationRequest request)
+   at PrisonManagementSystem.API.Controllers.PrisonerController.GetAllAsync(PaginationRequest paginationRequest) in C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem\Controllers\PrisonManagement\PrisonerController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+[2025-03-25 23:56:57.153 +04:00] [ERR] Error: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[PrisonManagementSystem.DAL.Entities.PrisonDBContext.Prisoner, PrisonManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[PrisonManagementSystem.BL.DTOs.Prisoner.GetPrisonerDto, PrisonManagementSystem.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] | Path: /api/prisoners 
+[2025-03-25 23:56:57.154 +04:00] [ERR] HTTP GET /api/prisoners responded 500 in 8765.2601 ms 

@@ -1,0 +1,1405 @@
+[
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identitiy.AuthController",
+    "Method": "ChangePasswordAsync",
+    "RelativePath": "api/v1/auths/change-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "oldPassword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "newPassword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identitiy.AuthController",
+    "Method": "LoginAsync",
+    "RelativePath": "api/v1/auths/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userNameOrEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identitiy.AuthController",
+    "Method": "LogOutAsync",
+    "RelativePath": "api/v1/auths/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userNameOrEmail",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identitiy.AuthController",
+    "Method": "RefreshAsync",
+    "RelativePath": "api/v1/auths/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tokenApiDto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Identiity.Token.TokenApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identitiy.AuthController",
+    "Method": "ResetPasswordAsync",
+    "RelativePath": "api/v1/auths/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "newPassword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identitiy.AuthController",
+    "Method": "RevokeAsync",
+    "RelativePath": "api/v1/auths/revoke",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.CellController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/v1/cells",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.CellController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/v1/cells",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Cell.CreateCellDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.CellController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/v1/cells/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.CellController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/v1/cells/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Cell.UpdateCellDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.CellController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/v1/cells/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "isHardDelete",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.CellController",
+    "Method": "GetAllByPrisonAsync",
+    "RelativePath": "api/v1/cells/prison/{prisonId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "prisonId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.CrimeController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/v1/crimes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.CrimeController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/v1/crimes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createCrimeDto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Crime.CreateCrimeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.CrimeController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/v1/crimes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.CrimeController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/v1/crimes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Crime.UpdateCrimeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.CrimeController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/v1/crimes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "isHardDelete",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.IncidentController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/v1/incidents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.IncidentController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/v1/incidents",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Incident.CreateIncidentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.IncidentController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/v1/incidents/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.IncidentController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/v1/incidents/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Incident.UpdateIncidentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.IncidentController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/v1/incidents/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "isHardDelete",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.PrisonerController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/v1/prisoners",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.PrisonerController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/v1/prisoners",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Prisoner.CreatePrisonerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.PrisonerController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/v1/prisoners/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.PrisonerController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/v1/prisoners/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Prisoner.UpdatePrisonerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.PrisonerController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/v1/prisoners/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "isHardDelete",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.PrisonController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/v1/prisons",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.PrisonController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/v1/prisons",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Prison.CreatePrisonDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.PrisonController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/v1/prisons/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.PrisonController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/v1/prisons/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Prison.UpdatePrisonDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.PrisonController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/v1/prisons/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "isHardDelete",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.PrisonController",
+    "Method": "ChangeStatus",
+    "RelativePath": "api/v1/prisons/change-status/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "isActive",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.PunishmentController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/v1/punishments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.PunishmentController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/v1/punishments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.DTOs.CreatePunishmentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.PunishmentController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/v1/punishments/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.PunishmentController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/v1/punishments/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.DTOs.UpdatePunishmentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.PunishmentController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/v1/punishments/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "isHardDelete",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.ReportController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/v1/reports",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.ReportController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/v1/reports/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.ReportController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/v1/reports/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.DTOs.UpdateReportDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.ReportController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/v1/reports/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "isHardDelete",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.ReportController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/v1/reports/incident/{incidentId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "incidentId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.DTOs.CreateReportDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identity.RoleController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/v1/roles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Identiity.Role.CreateRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identity.RoleController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/v1/roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identity.RoleController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/v1/roles/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identity.RoleController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/v1/roles/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identity.RoleController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/v1/roles/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Identiity.Role.UpdateRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identity.RoleController",
+    "Method": "GetByUserIdAsync",
+    "RelativePath": "api/v1/roles/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.ScheduleController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/v1/schedules",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.ScheduleController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/v1/schedules",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.DTOs.CreateScheduleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.ScheduleController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/v1/schedules/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.ScheduleController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/v1/schedules/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.DTOs.UpdateScheduleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.ScheduleController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/v1/schedules/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "isHardDelete",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.StaffController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/v1/staffs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.StaffController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/v1/staffs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Staff.CreateStaffDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.StaffController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/v1/staffs/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.StaffController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/v1/staffs/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Staff.UpdateStaffDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.StaffController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/v1/staffs/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "isHardDelete",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identity.UserController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/v1/users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Identiity.User.CreateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identity.UserController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/v1/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identity.UserController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/v1/users/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identity.UserController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/v1/users/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identity.UserController",
+    "Method": "AssignRolesAsync",
+    "RelativePath": "api/v1/users/{id}/roles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "roles",
+        "Type": "System.String[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identity.UserController",
+    "Method": "CreateStaffUserAsync",
+    "RelativePath": "api/v1/users/create-staff-user",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerStaffUserDto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Identiity.User.RegisterStaffUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.Identity.UserController",
+    "Method": "RegisterVisitorWithUserAsync",
+    "RelativePath": "api/v1/users/create-visitor-user",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Identiity.User.RegisterVisitorUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.VisitorController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/v1/visitors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.VisitorController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/v1/visitors",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Visitor.CreateVisitorDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.VisitorController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/v1/visitors/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.VisitorController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/v1/visitors/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.DTOs.UpdateVisitorDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.VisitorController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/v1/visitors/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "isHardDelete",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.VisitController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/v1/visits",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.VisitController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/v1/visits",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Visit.PrisonManagementSystem.DTOs.CreateVisitDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.VisitController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/v1/visits/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.VisitController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/v1/visits/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PrisonManagementSystem.BL.DTOs.Visit.PrisonManagementSystem.DTOs.UpdateVisitDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrisonManagementSystem.API.Controllers.VisitController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/v1/visits/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "isHardDelete",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

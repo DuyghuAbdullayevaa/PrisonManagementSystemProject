@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\obj\Debug\net6.0\PrisonManagementSystem.BL.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\obj\Debug\net6.0\PrisonManagementSystem.BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\obj\Debug\net6.0\PrisonManagementSystem.BL.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\obj\Debug\net6.0\PrisonManagementSystem.BL.AssemblyInfo.cs
+C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\obj\Debug\net6.0\PrisonManagementSystem.BL.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\bin\Debug\net6.0\PrisonManagementSystem.BL.deps.json
+C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\bin\Debug\net6.0\PrisonManagementSystem.BL.dll
+C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\bin\Debug\net6.0\PrisonManagementSystem.BL.pdb
+C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\bin\Debug\net6.0\PrisonManagementSystem.DAL.dll
+C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\bin\Debug\net6.0\PrisonManagementSystem.DAL.pdb
+C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\obj\Debug\net6.0\PrisonMa.9F1497A5.Up2Date
+C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\obj\Debug\net6.0\PrisonManagementSystem.BL.dll
+C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\obj\Debug\net6.0\refint\PrisonManagementSystem.BL.dll
+C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\obj\Debug\net6.0\PrisonManagementSystem.BL.pdb
+C:\Users\user\source\repos\FinalProject\PrisonManagementSystem\PrisonManagementSystem.BL\obj\Debug\net6.0\ref\PrisonManagementSystem.BL.dll
